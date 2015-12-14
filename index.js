@@ -44,7 +44,7 @@ CacheBuster.prototype.getChecksum = function getChecksum(file) {
     }
 
     return hash.read().toString('hex').substr(0, this.checksumLength);
-}
+};
 
 CacheBuster.prototype.getBustedPath = function getBustedPath(file) {
     var checksum = this.random ? this.hash : this.getChecksum(file);
